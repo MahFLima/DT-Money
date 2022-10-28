@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <link rel="icon" type="image/svg+xml" href="./assets/wallet.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/modal.css">
+  <title>DTMoney</title>
+</head>
+
+<body>
+  <div class="transaction">
+    <div class="t-form">
+      <div class="form-head">
+        <p>Nova transação</p>
+        <button class="exit"><i class="ph-x"></i></button>
+      </div>
+      <form>
+        <input class="input-title" type="text" placeholder="Descrição" />
+        <input class="input-value" type="number" placeholder="Preço" />
+        <input class="input-description" type="text" placeholder="Categoria" />
+        <div class="options">
+          <div class="opt-plus">
+            <i class="ph-arrow-circle-up"></i>
+            <p>Entrada</p>
+          </div>
+          <div class="opt-minus">
+            <i class="ph-arrow-circle-down"></i>
+            <p>Saida</p>
+          </div>
+        </div>
+        <button class="register">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+  <header>
+    <div class="content-logo">
+      <div class="title">
+        <img src="assets/Ignite simbol.svg" />
+        <strong>DT Money</strong>
+      </div>
+      <button class="btn">Nova transação</button>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <div class="head">
+          <p>Entradas</p>
+          <i class="ph-arrow-circle-up icons"></i>
+        </div>
+        <p class="price" id="entrada">R$ 0,00</p>
+      </div>
+      <div class="card">
+        <div class="head">
+          <p>Saidas</p>
+          <i class="ph-arrow-circle-down icons"></i>
+        </div>
+        <p class="price" id="saida">R$ 0,00</p>
+      </div>
+      <div class="card">
+        <div class="head">
+          <p>Total</p>
+          <i class="ph-currency-dollar icons"></i>
+        </div>
+        <p class="price" id="total">0,00</p>
+      </div>
+    </div>
+
+  </header>
+  <div class="search">
+    <input type="text" placeholder="Busque uma transação" />
+    <button class="search-btn">
+      <i class="ph-magnifying-glass"></i>
+      Buscar
+    </button>
+  </div>
+  <div class="content">
+    <!-- reindenizado no js -->
+  </div>
+  <script type="module" src="./js/main.js"></script>
+  
+</body>
+
+</html>
