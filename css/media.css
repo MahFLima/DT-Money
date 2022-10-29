@@ -1,0 +1,60 @@
+@media(max-width: 1024px){
+  .card-group{
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+  .search{
+    padding: 0 5rem;
+  }
+  .content{
+    padding: 0 5rem;
+  }
+  .content-line{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btn-del{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+}
+
+@media(max-width: 740px){
+  .search{
+    padding: 0 2rem;
+  }
+  .content{
+    padding: 0 2.5rem;
+  }
+}
+
+@media(max-width: 540px){
+  header{
+    padding: 1rem 1.5rem;
+  }
+  .title strong {
+    font-size: 1rem;
+  }
+  .btn{
+    font-size: 0.8rem;
+    width: 100px;
+    padding: 0.5rem;
+  }
+  .search{
+    margin-top: 6rem;
+  }
+  .search-btn{
+    padding: 0.5rem;
+  }
+  .search-btn p{
+    display: none;
+  }
+  .content{
+    padding: 0 1.5rem;
+  }
+  .transaction{
+    align-items: flex-end;
+  }
+}

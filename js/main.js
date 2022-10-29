@@ -20,13 +20,13 @@ const phTotal = document.querySelector("#total");
 
 function isFloat(x) {
   if (parseInt(x) != parseFloat(x)) {
-    return(x.toFixed(2))
+    return (x.toFixed(2))
   } else {
-    return(`${x}.00`)
+    return (`${x}.00`)
   }
 }
 
-function itemDelete(value){
+function itemDelete(value) {
   const result = wallet.filter((item, index) => index != value)
   wallet = result
 
@@ -60,10 +60,14 @@ function list() {
     div.setAttribute("id", index);
     div.classList.add("content-line");
 
+    const div1 = document.createElement("div")
+    const div2 = document.createElement("div")
+
     const title = document.createElement("p");
     title.innerHTML = item.title;
     const value = document.createElement("p");
     value.innerHTML = `R$ ${isFloat(item.value)}`;
+
     const description = document.createElement("p");
     description.innerHTML = item.description;
     const date = document.createElement("p");
@@ -120,14 +124,7 @@ exit.addEventListener("click", () => {
 
 
 // search.addEventListener("click", () => {
-//   const value = inpSearch.value
-//   if(value.length > 0){
-//     const result = value.length > 0 ? wallet.filter(item => item.title.toLowerCase().includes(value.toLowerCase())):[]
-//   }
-
-//   content.innerHTML = "<p></p>";
-//   cards();
-//   list();
+  
 // })
 
 

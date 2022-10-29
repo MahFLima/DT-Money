@@ -20,16 +20,18 @@
 }
 
 body {
+  width: 100vw;
   background: var(--shape-principal);
   color: var(--text-base);
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 header {
   height: 200px;
-  padding: 2.5rem 10rem;
+  padding: 2.5rem;
   background: var(--background);
 }
 
@@ -87,9 +89,9 @@ header {
 
 .card-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 2.5rem;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .card-group .card:last-child {
@@ -97,7 +99,8 @@ header {
 }
 
 .card {
-  width: 380px;
+  min-width: 300px;
+  width: 300px;
   height: 150px;
   background: var(--shape-terciario);
   padding: 1.5rem;
@@ -132,6 +135,7 @@ header {
   padding: 0 10rem;
   margin-top: 8rem;
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -179,7 +183,7 @@ input:placeholder {
 
 .content {
   padding: 0 10rem;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -187,17 +191,35 @@ input:placeholder {
 
 .content-line {
   padding: 1.25rem 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: var(--shape-secundaria);
   border-radius: 5px;
   font-weight: 400;
   font-size: 1rem;
   line-height: 160%;
+  position: relative;
+}
+
+.content-line div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-line p{
+  text-transform: capitalize;
 }
 
 .content-line p:nth-child(2) {
   color: var(--green-light);
+  font-size: 1.25rem;
+  line-height: 160%;
+}
+
+.content-line p:nth-child(3), .content-line p:nth-child(4){
+  color: var(--placeholder);
 }
 
 .btn-del{

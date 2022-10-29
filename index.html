@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="./css/media.css">
   <script type="module" src="https://unpkg.com/phosphor-icons"></script>
   <title>DTMoney</title>
 </head>
@@ -26,6 +27,7 @@
       <form>
         <input class="input-title" type="text" placeholder="Descrição" />
         <input class="input-value" type="number" placeholder="Preço" />
+        <small class="help">Use o sinal negativo para despesas e ponto para casas decimais</small>
         <input class="input-description" type="text" placeholder="Categoria" />
         <div class="options">
           <div class="opt-plus">
@@ -78,7 +80,7 @@
     <input class="inp-search" type="text" placeholder="Busque uma transação" />
     <button class="search-btn">
       <i class="ph-magnifying-glass"></i>
-      Buscar
+      <p>Buscar</p>
     </button>
   </div>
   <div class="content">
