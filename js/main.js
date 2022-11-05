@@ -1,7 +1,6 @@
 import 'https://unpkg.com/phosphor-icons';
 let wallet = []
 const content = document.querySelector(".content");
-
 const btn = document.querySelector(".btn");
 const exit = document.querySelector(".exit");
 const transaction = document.querySelector(".transaction");
@@ -18,6 +17,12 @@ const phEntrada = document.querySelector("#entrada");
 const phSaida = document.querySelector("#saida");
 const phTotal = document.querySelector("#total");
 
+if(localStorage.length){
+  wallet = JSON.parse(localStorage.getItem("wallet"));
+} else {
+  wallet = []
+}
+
 function isFloat(x) {
   if (parseInt(x) != parseFloat(x)) {
     return (x.toFixed(2))
@@ -30,6 +35,7 @@ function itemDelete(value) {
   const result = wallet.filter((item, index) => index != value)
   wallet = result
 
+  localStorage.setItem("wallet", JSON.stringify(wallet));
   content.innerHTML = "<p></p>";
   cards();
   list();
@@ -55,6 +61,7 @@ function cards() {
 }
 
 function list() {
+
   wallet.map((item, index) => {
     const div = document.createElement("div");
     div.setAttribute("id", index);
@@ -112,6 +119,8 @@ register.addEventListener("click", (e) => {
   content.innerHTML = "<p></p>";
   cards();
   list();
+
+  localStorage.setItem("wallet", JSON.stringify(wallet));
 });
 
 btn.addEventListener("click", () => {

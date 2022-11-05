@@ -3,11 +3,8 @@
     justify-content: flex-start;
     overflow-x: scroll;
   }
-  .search{
-    padding: 0 5rem;
-  }
   .content{
-    padding: 0 5rem;
+    padding: 5rem 5rem;
   }
   .content-line{
     display: grid;
@@ -22,11 +19,8 @@
 }
 
 @media(max-width: 740px){
-  .search{
-    padding: 0 2rem;
-  }
   .content{
-    padding: 0 2.5rem;
+    padding: 5rem 2.5rem;
   }
 }
 
@@ -42,17 +36,8 @@
     width: 100px;
     padding: 0.5rem;
   }
-  .search{
-    margin-top: 6rem;
-  }
-  .search-btn{
-    padding: 0.5rem;
-  }
-  .search-btn p{
-    display: none;
-  }
   .content{
-    padding: 0 1.5rem;
+    padding: 5rem 1.5rem;
   }
   .transaction{
     align-items: flex-end;

@@ -130,59 +130,14 @@ header {
   color: var(--text-base);
 }
 
-.search {
-  width: 100%;
-  padding: 0 10rem;
-  margin-top: 8rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
 
-.search input {
-  width: 100%;
-  padding: 1rem;
-  border-radius: 6px;
-  background: var(--background);
-  color: white;
-  border: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 140%;
-}
-
-input:placeholder {
-  color: var(--placeholder);
-}
-
-.search-btn {
-  color: var(--green-light);
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.875rem 2rem;
-  background: transparent;
-  border: 1px solid var(--green-light);
-  border-radius: 6px;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 160%;
-  cursor: pointer;
-}
-
-.search-btn:hover {
-  background: var(--green);
-  color: white;
-  border-color: var(--green);
-}
 
 .ph-magnifying-glass {
   font-size: 20px;
 }
 
 .content {
-  padding: 0 10rem;
+  padding: 5rem 10rem;
   margin: 1.5rem 0;
   display: flex;
   flex-direction: column;
